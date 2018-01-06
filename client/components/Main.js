@@ -10,6 +10,7 @@ class Main extends React.Component {
         return (
             <div>
                 <Link to="/" ><h1>InstaDux</h1></Link>
+                {React.cloneElement(this.props.children, this.props)}
             </div>
         )
     }
